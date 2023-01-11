@@ -168,21 +168,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
- /* Get the text element */
- var text = ["KV CINE ACADEMY", "DANCE ACADEMY"];
- var index = 0;
- var speed = 2000; // milliseconds between text reveal
- function type() {
-     if (index < text.length) {
-         document.getElementById("demo").innerHTML = text[index];
-         index++;
-         setTimeout(type, speed);
-     }
- }
- type();
-/* End Text Animation */
-
-
 
 /*  AUTO POUP ON WEBSITE AFTER 5s  */
 // Set the time interval for the popup to appear (in milliseconds)

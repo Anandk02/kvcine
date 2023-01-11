@@ -7,7 +7,7 @@
 
 /* Colors */
 :root {
-  --color-default: #660099;
+  --color-default: #f3f0f5;
   --color-primary:#66C2A5;
   --color-secondary:#000080;
 }
@@ -23,7 +23,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
-  background-color: #000;
+  background-color:rgb(207,40,86);
 }
 
 a {
@@ -1209,7 +1209,7 @@ h6 {
 .hero {
   width: 100%;
   min-height: 30vh;
-  background-image: url(../img/hero/3rd.jpg);
+  background:linear-gradient(0deg, rgb(207,40,86, 0.5), rgba(255 0 150 / 89%)), url(../img/hero/3rd.jpg);
   background-size: cover;
   position: relative;
   padding: 140px 0 60px 0;
@@ -1219,7 +1219,7 @@ h6 {
   margin: 0 0 10px 0;
   font-size: 38px;
   font-weight: 700;
-  color: #eee1e1;
+  color: #fff;
   font-family: var(--font-secondary);
 }
 
@@ -1295,5 +1295,82 @@ h6 {
 
 .footer .credits a {
   color: var(--color-primary);
+}
+
+
+
+
+
+/* geaasdas */
+.section-lg-bottom {
+  padding-bottom: 150px;
+} 
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 140px;
+}
+
+.subtitle {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #8b8e93;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+p, .paragraph {
+  font-weight: 400;
+  color: #8b8e93;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #242f3e;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: .2s ease;
+}
+
+.rounded-sm, .icon-bg-square::after, .team-member::before {
+  border-radius: 15px;
+}
+
+.icon-primary {
+  color: #062caf;
+}
+
+.icon-bg-square {
+  position: relative;
+}
+
+
+.icon-lg {
+  font-size: 50px;
+}
+
+.icon-bg-square::after {
+  content: '';
+  position: absolute;
+  top: -55px;
+  left: 73%;
+  width: 75px;
+  height: 75px;
+  -webkit-transform: rotate(50deg) scale(0.8) skew(-1deg, -15deg) translateX(16px) translateY(97px);
+  transform: rotate(50deg) scale(0.8) skew(-1deg, -15deg) translateX(16px) translateY(97px);
+  background: #f5f6f7;
+}
+
+.icon-bg-square::before {
+  z-index: 1;
+  position: relative;
+}
+
+.section-title {
+  margin-bottom: 38px;
 }
 
