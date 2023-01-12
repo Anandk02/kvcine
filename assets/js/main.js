@@ -167,16 +167,53 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// Coursel
+$(document).ready(function()
+{
 
+   
+        if($('.bbb_slider').length)
+        {
+            var trendsSlider = $('.bbb_slider');
+            trendsSlider.owlCarousel(
+            {
+                loop:false,
+                margin:30,
+                nav:false,
+                dots:false,
+                autoplayHoverPause:true,
+                autoplay:false,
+                responsive:
+                {
+                    0:{items:1},
+                    575:{items:2},
+                    991:{items:3}
+                }
+            });
 
-/*  AUTO POUP ON WEBSITE AFTER 5s  */
-// Set the time interval for the popup to appear (in milliseconds)
-var delay = 5000;
-// Get the popup element
-var popup = document.getElementById("popup");
-// Show the popup after the delay
-setTimeout(function() {
-    popup.style.display = "block";
-}, delay);
+            trendsSlider.on('click', '.bbb_fav', function (ev)
+            {
+                $(ev.target).toggleClass('active');
+            });
 
-/* End Auto Poup Mesage for new offer */
+            if($('.bbb_prev').length)
+            {
+                var prev = $('.bbb_prev');
+                prev.on('click', function()
+                {
+                    trendsSlider.trigger('prev.owl.carousel');
+                });
+            }
+
+            if($('.bbb_next').length)
+            {
+                var next = $('.bbb_next');
+                next.on('click', function()
+                {
+                    trendsSlider.trigger('next.owl.carousel');
+                });
+            }
+        }
+    
+
+    });
