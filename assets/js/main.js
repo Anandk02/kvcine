@@ -217,3 +217,18 @@ $(document).ready(function()
     
 
     });
+
+
+    // POP UP MESSAGE
+    // JavaScript for the special offer popup
+function showPopup() {
+  document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+window.onload = function() {
+  setTimeout(showPopup, 5000); // show the popup after 5 seconds
+};

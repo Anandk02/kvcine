@@ -1996,3 +1996,39 @@ button:focus {
     display: block !important;
   }
 }
+
+
+
+/* CSS for the special offer popup */
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+
+.popup-content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eeeff5;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0.1rem;
+}
+
+.popup-content img{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.popup-content .close{
+  position: relative;
+  left: 10px;
+  top: 0;
+}
+
