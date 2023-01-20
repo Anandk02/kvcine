@@ -1210,9 +1210,7 @@ h6 {
 .hero {
   width: 100%;
   min-height: 30vh;
-  background: linear-gradient(0deg,
-      rgb(207, 40, 86, 0.5),
-      rgba(255 0 150 / 89%)),
+  background:  linear-gradient(to top, #00c6fb 0%, #005bea 100%),
     url(../img/hero/3rd.jpg);
   background-size: cover;
   position: relative;
@@ -1237,11 +1235,11 @@ h6 {
 .hero h2 span:before {
   content: "";
   position: absolute;
-  height: 50%;
+  height: 100%;
   bottom: 0;
   left: 0;
   right: 0;
-  background: var(--color-primary);
+  background: #e29259;
   z-index: -1;
 }
 
