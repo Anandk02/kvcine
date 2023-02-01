@@ -31,17 +31,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
-
-  <!-- CALL OR WHATSAPP -->
-  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-  <div class="elfsight-app-28884824-6e90-427e-995d-7eedc7c42755"></div>
-  <!-- CALL OR WHATSAPP END -->
 
   <!-- AUTO POP UP -->
   <!-- HTML for the special offer popup -->
@@ -98,7 +92,7 @@
           <h3 style="font-weight: bold; text-transform: uppercase; color: #fff;">Performer in Just 5 Days </h3>
           <p>Master the<strong>‘Simple techniques to Dance ’<span>that 15000+ people followed to become good
                 dancers,</span></strong>Even if you have never tried a single dance movement before. </p>
-          <a href="https://rzp.io/l/L8zfhJg" class="btn-get-started" style="color: rgb(8, 3, 3); background-color: #e4f90b;"><strong> Our Dance Class Just @ ₹199 <img style="width: 30px; height: 30px;" src="./assets/img/booking.gif" alt=""></strong></a>
+          <a href="#" id="rzp-button1" class="btn-get-started" style="color: rgb(8, 3, 3); background-color: #e4f90b;"><strong> Our Dance Class Just @ ₹199 <img style="width: 30px; height: 30px;" src="./assets/img/booking.gif" alt=""></strong></a>
           <h6 style="color: rgb(13, 13, 13);">Batch Starts on Monday, 23th Jan 2023<br>6:30 AM - 7.30 AM Daily</h6>
         </div>
       </div>
@@ -225,7 +219,7 @@
           </div>
       </div>
       <div class="ft">
-        <a href="https://rzp.io/l/L8zfhJg" class="btn btn-primary"><strong> Our Dance Class Just @ ₹199/-</strong></a>
+        <a href="#" id="rzp-button1" class="btn btn-primary"> Our Dance Class Just @ ₹199/-</a>
         <h6 style="color: #fff;">Batch Starts on Monday, 23th Jan 2023,<br>6:30 AM - 7.30 AM Daily</h6>
       </div>
       </div>
@@ -640,24 +634,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center mb-2-3 mb-lg-6">
-                          <button class="btn btn-block"></button>
-                          <a href="https://rzp.io/l/L8zfhJg" class="btn btn-primary">
-                            <span class="glyphicon glyphicon-th-list"></span><strong> Register Now at @₹199/-</strong>
-                          </a>
-                          <h2 class="h1 mb-0 text-secondary">Batch Starts on Monday, 23th Jan 2023,<br>6:30 AM - 7.30 AM Daily</h2>
-                      </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
+    <br>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <a href="#" id="rzp-button1" class="btn btn-primary">Register Now Just @ 199/-</a>
+    </div>
+    <h4 class="text-center text-secondary">Batch Starts on Monday, 23th Jan 2023,<br>6:30 AM - 7.30 AM Daily</h4>
 </section>
 
+
   <!-- fq END -->
-
-
-
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="container">
@@ -665,7 +656,6 @@
         &copy; Copyright <strong><span>KV CINE.</span></strong> All Rights Reserved
       </div>
       <div class="credits">
-
         Designed by <a href="#">Anand</a>
       </div>
     </div>
@@ -678,6 +668,34 @@
     <div class="line"></div>
   </div>
 
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+    var options = {
+    "key": "rzp_test_F2hT099zekeQZp", // Enter the Key ID generated from the Dashboard
+    "amount": "199",
+    "name": "Kv Cine",
+    "description": "A Wild Sheep Chase is the third novel by Japanese author Haruki Murakami",
+    "image": "http://example.com/your_logo.jpg",
+    "handler": function (response){
+      window.location.pathname = "join.html"
+    },
+    /**
+      * You can track the modal lifecycle by * adding the below code in your options
+      */
+    "modal": {
+        "ondismiss": function(){
+            console.log('Checkout form closed');
+        }
+    }
+};
+var rzp1 = new Razorpay(options);
+var button = document.getElementById('rzp-button1');
+button.onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+}
+</script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
@@ -689,7 +707,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
