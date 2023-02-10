@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>KV Cine. Dance Academy in New Delhi</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -12,9 +13,11 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
   <!-- Vendor CSS Files -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round">
@@ -30,25 +33,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- CALL OR WHATSAPP -->
-  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-  <div class="elfsight-app-28884824-6e90-427e-995d-7eedc7c42755"></div>
-  <!-- CALL OR WHATSAPP END -->
-
   <!-- AUTO POP UP -->
   <!-- HTML for the special offer popup -->
 <div id="popup" style="display: none;">
   <div class="popup-content">
-    <a href=""><img src="./assets/img/offer/offer3.jpg" class="img-fluid" alt="Special Offer"></a>
-      <button class="close" onclick="closePopup()">X</button>
+    <div class="container">
+      <a href=""><img src="./assets/img/offer/offer3.jpg" class="img-fluid" alt="Special Offer"></a>
+    </div>
+    <button class="close" onclick="closePopup()">X</button>
   </div>
 </div>
 
@@ -68,7 +70,6 @@
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="join.html">Join Now</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -86,20 +87,21 @@
   </header><!-- End Header -->
 
 
+
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade"
    data-aos-delay="1500">
-   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NemJU9VO5Ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <div class="container">
+   
+     <div class="col-12 col-md-8">
       <div class="row justify-content-center">
         <div class="col-lg-6 text-center">
-          <h3 style="font-weight: bold; text-transform: uppercase; color: #fff;">Learn Easy Dance Moves</h3>
+          <h3 style="font-weight:Regular 800; font-size: 42px; font-family: Lobster; color: #fff;">Learn Easy Dance Moves</h3>
           <h2><span>Become a Star</span></h2>
-          <h3 style="font-weight: bold; text-transform: uppercase; color: #fff;">Performer in Just 5 Days </h3>
+          <h3 style="font-weight:Regular 800; font-size: 36px; font-family: Lobster; color: #fff;">Performer in Just 5 Days </h3>
           <p>Master the<strong>‘Simple techniques to Dance ’<span>that 15000+ people followed to become good
                 dancers,</span></strong>Even if you have never tried a single dance movement before. </p>
-          <a href="https://rzp.io/l/L8zfhJg" class="btn-get-started" style="color: rgb(8, 3, 3); background-color: #e4f90b;"><strong> Our Dance Class Just @ ₹199 <img style="width: 30px; height: 30px;" src="./assets/img/booking.gif" alt=""></strong></a>
-          <h6 style="color: rgb(13, 13, 13);">Batch Starts on Monday, 23th Jan 2023<br>6:30 AM - 7.30 AM Daily</h6>
+          <a href="#" id="rzp-button1" class="btn-get-started" style="color: rgb(8, 3, 3); background-color: #e4f90b;"><strong> Our Dance Class Just @ ₹199 <img style="width: 30px; height: 30px;" src="./assets/img/booking.gif" alt=""></strong></a>
+          <h6 style="color: rgb(253, 251, 251);">Batch Starts on Monday, 23th Jan 2023<br>6:30 AM - 7.30 AM Daily</h6>
         </div>
       </div>
     </div>
@@ -141,32 +143,62 @@
       </div>
     </div>
   </section>
-  <section class="bg-dark section section-lg-bottom" style="background-image: linear-gradient(to top, #09203f 0%, #537895 100%);">
-    <div class="container">
+ 
+<!-- video-testimonial-section -->
+<div class="space-medium">
+  <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-title" style="color: #fff;">Till Now 15000+ People Have Started</h2>
-          <p style="color: #fff;">Dancing in Just 5 Days</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-          <div class="text-center shadow card py-3 border-0 rounded-sm">
-            <iframe width="355" height="315" src="https://www.youtube.com/embed/8oG1JpjsZ7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-12 col-sm-12 col-12 text-center">
+              <!-- section-title -->
+              <div class="section-title">
+                  <h2>TILL NOW 15000+ PEOPLE HAVE STARTED</h2>
+                  <p>Dancing in Just 5 Days</p>
+              </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-          <div class="text-center shadow card py-3 border-0 rounded-sm">
-            <iframe width="355" height="315" src="https://www.youtube-nocookie.com/embed/NemJU9VO5Ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-          <div class="text-center shadow card py-3 border-0 rounded-sm">
-            <iframe width="355" height="315" src="https://www.youtube.com/embed/WUDiesv8dCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-        </div>
+          <!-- /.section-title -->
       </div>
-    </div>
-  </section>
-  
+      <div class="row">
+          <!-- video-testimonail -->
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="video-testimonial-block">
+                  <div class="video-thumbnail"><img src="./assets/img/them/1.png" alt="" class="img-fluid"></div>
+                  <div class="video">
+                      <iframe src="https://www.youtube.com/embed/8oG1JpjsZ7c" allowfullscreen>
+                      </iframe>
+                  </div>
+                  <a href="#" class="video-play"></a>
+              </div>
+          </div>
+          <!-- /.video-testimonail -->
+          <!-- video-testimonail -->
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="video-testimonial-block">
+                  <div class="video-thumbnail"><img src="./assets/img/them/2.png" alt="" class="img-fluid"></div>
+                  <div class="video">
+                      <iframe src="https://www.youtube.com/embed/NemJU9VO5Ds" 
+                       allowfullscreen>
+                      </iframe>
+                  </div>
+                  <a href="#" class="video-play"></a>
+              </div>
+          </div>
+          <!-- /.video-testimonail -->
+          <!-- video-testimonail -->
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="video-testimonial-block">
+                  <div class="video-thumbnail"><img src="./assets/img/them/3.png" alt="" class="img-fluid"></div>
+                  <div class="video">
+                      <iframe src="https://www.youtube.com/embed/WUDiesv8dCY" allowfullscreen>
+                      </iframe>
+                  </div>
+                  <a href="#" class="video-play"></a>
+              </div>
+          </div>
+          <!-- /.video-testimonail -->
+      </div>
+  </div>
+</div>
+<!-- /.video-testimonial-section -->  
 
   <main id="main" data-aos="fade" data-aos-delay="1000" style="background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);">
     <div class='container-fluid mx-auto mt-5 mb-5 col-12' style="text-align: center">
@@ -225,7 +257,7 @@
           </div>
       </div>
       <div class="ft">
-        <a href="https://rzp.io/l/L8zfhJg" class="btn btn-primary"><strong> Our Dance Class Just @ ₹199/-</strong></a>
+        <a href="#" id="rzp-button1" class="btn btn-primary"> Our Dance Class Just @ ₹199/-</a>
         <h6 style="color: #fff;">Batch Starts on Monday, 23th Jan 2023,<br>6:30 AM - 7.30 AM Daily</h6>
       </div>
       </div>
@@ -239,7 +271,7 @@
         <h1 class="text-center" style="color: #fff; font-weight: bold;">About Us</h1>
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/gallery/about.png" class="img-fluid" alt="">
+            <img src="assets/img/test.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-5 content">
             <h2 style="color: #fff;" >Professional Dance Academy in New Delhi</h2>
@@ -261,311 +293,37 @@
     </section><!-- End About Section -->
   <!-- About us end -->
 
-  <!-- Instrector -->
-  <div class="container" style="background: rgb(147,136,138);
-  background: linear-gradient(161deg, rgba(147,136,138,1) 0%, rgba(214,166,152,1) 87%);">
-    <h1 class="text-center" style="color: #fff; text-transform: uppercase;text-decoration: dotted;">A Little Bit of Your Dance Coach,</h1>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="widget-container">
-                <div class="widget">
-                    <div class="profile-card">
-                        <div class="card-header">
-                            <div class="header-avatar">
-                                <img src="./assets/img/test.png" alt="andy">
-                            </div>
-                            <div class="header-name" style="color: black;">
-                                Kumar Vikash Sir
-                            </div>
-                        </div>
-                        <div class="card-body bg-warning">
-                            <div class="body-description">
-                              Kumar Vikas Sir is working in the field of Kathak since 12 years. He is a disciple of Pandit Birju Maharaj Ji, he has also directed many films or music videos as a choreographer and director. Taught Kathak or semi classical dance to around 50k students in India or abroad and Director of KV Kathak School and KV Cine Production
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="footer-social">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <a href="">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <a href="">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <a href="">
-                                            <i class="fa fa-dribbble"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <a href="">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+  <!-- Instractor -->
+  <section class="section gray-bg" id="blog">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+                <div class="section-title">
+                    <h2>A LITTLE BIT OF YOUR DANCE COACH</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="blog-grid">
+                    <div class="blog-img">
+                        <a href="#">
+                            <img src="assets/img/gallery/about.png" title="" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-info">
+                        <h5 class="text-center"><a href="#">Kumar Vikash Sir</a></h5>
+                        <p>Kumar Vikas Sir is working in the field of Kathak since 12 years. He is a disciple of Pandit Birju Maharaj Ji, he has also directed many films or music videos as a choreographer and director. Taught Kathak or semi classical dance to around 50k students in India or abroad and Director of KV Kathak School and KV Cine Production.</p>
+                        
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="col-md-6">
-            <div class="widget-container">
-                <div class="widget">
-                    <div class="profile-card">
-                        <div class="card-header">
-                            <div class="header-avatar">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="claudio">
-                            </div>
-                            <div class="header-name">
-                                Caludio Morrison
-                            </div>
-                        </div>
-                        <div class="card-body bg-primary">
-                            <div class="body-description">
-                                A user profile is a group of settings that define how Outlook is set up for a particular user. For example, a profile may include access to a mailbox on Microsoft Exchange Server, and specify that the Outlook Address Book appear in the Address Book dialog box. A profile can contain any number of information services.
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="footer-social">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <a href="">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <a href="">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <a href="">
-                                            <i class="fa fa-dribbble"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <a href="">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
-    </div>
-  <!-- Instrector End -->
-  <main id="main" data-aos="fade" data-aos-delay="1500">
-    <div class="container-xl">
-      <h1 class="text-center" style="color: #fff;">Our Gallery</h1>
-      <div class="row">
-        <div class="col-md-10 mx-auto">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-            <!-- Carousel indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Wrapper for carousel items -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/img-1.png" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/img-2.png" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/img-3.png" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/img-4.png" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/img-12.png" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/img-6.png" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/img-9.png" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/img-13.png" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/img-14.png" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/img-15.png" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/img-16.png" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper"> 
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/img-17.png" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/10.jpg" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/1.jpg" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/2.jpg" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/3.jpg" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/4.jpg" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/8.jpg" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/6.jpg" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/7.jpg" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="thumb-wrapper">
-                      <div class="img-box">
-                        <img src="./assets/img/gallery/8.jpg" class="img-fluid" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Carousel controls -->
-            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-              <i class="fa fa-angle-left"></i>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-              <i class="fa fa-angle-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main><!-- End #main -->
-
+</section>
+    
+      <!-- End-->
+<!-- Instractor End -->
   <!-- Fq -->
   <section class="bg-light">
     <div class="container">
@@ -640,24 +398,134 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center mb-2-3 mb-lg-6">
-                          <button class="btn btn-block"></button>
-                          <a href="https://rzp.io/l/L8zfhJg" class="btn btn-primary">
-                            <span class="glyphicon glyphicon-th-list"></span><strong> Register Now at @₹199/-</strong>
-                          </a>
-                          <h2 class="h1 mb-0 text-secondary">Batch Starts on Monday, 23th Jan 2023,<br>6:30 AM - 7.30 AM Daily</h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <br>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <a href="#" id="rzp-button1" class="btn btn-primary">Register Now Just @ 199/-</a>
+    </div>
+    <h4 class="text-center text-secondary">Batch Starts on Monday, 23th Jan 2023,<br>6:30 AM - 7.30 AM Daily</h4>
+</section>
+
+<div class="container gallery">
+  <div class="viewed">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="bbb_viewed_title_container">
+                    <h3 class="bbb_viewed_title text-center">OUR Gallary</h3>
+                    <div class="bbb_viewed_nav_container">
+                        <div class="bbb_viewed_nav bbb_viewed_prev"><i class="fas fa-chevron-left"></i></div>
+                        <div class="bbb_viewed_nav bbb_viewed_next"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="bbb_viewed_slider_container">
+                    
+                  
+
+                    <div class="owl-carousel owl-theme bbb_viewed_slider">
+                     
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                <div class="bbb_viewed_image"><img src="./assets/img/gallery/1.jpg" alt=""></div>
+                            </div>
+                        </div>
+
+                   
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                                <div class="bbb_viewed_image"><img src="./assets/img/gallery/2.jpg" alt=""></div>
+                            </div>
+                        </div>
+
+                      
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                                <div class="bbb_viewed_image"><img src="./assets/img/gallery/3.jpg" alt=""></div>
+                            </div>
+                        </div>
+
+                       
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                <div class="bbb_viewed_image"><img src="./assets/img/gallery/4.jpg" alt=""></div>
+                                
+                            </div>
+                        </div>
+
+                        
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                <div class="bbb_viewed_image"><img src="./assets/img/gallery/5.jpg" alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="owl-item">
+                            <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                                <div class="bbb_viewed_image"><img src="./assets/img/gallery/6.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                          <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                              <div class="bbb_viewed_image"><img src="./assets/img/gallery/7.jpg" alt=""></div>
+                          </div>
                       </div>
+                      <div class="owl-item">
+                        <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="bbb_viewed_image"><img src="./assets/img/gallery/8.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                          <div class="bbb_viewed_image"><img src="./assets/img/gallery/9.jpg" alt=""></div>
+                      </div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="bbb_viewed_image"><img src="./assets/img/gallery/10.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="owl-item">
+                  <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                      <div class="bbb_viewed_image"><img src="./assets/img/gallery/11.jpg" alt=""></div>
+                  </div>
+              </div>
+              <div class="owl-item">
+                <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="bbb_viewed_image"><img src="./assets/img/gallery/12.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="owl-item">
+              <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                  <div class="bbb_viewed_image"><img src="./assets/img/gallery/13.jpg" alt=""></div>
+              </div>
+          </div>
+          <div class="owl-item">
+            <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                <div class="bbb_viewed_image"><img src="./assets/img/gallery/14.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="owl-item">
+          <div class="bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+              <div class="bbb_viewed_image"><img src="./assets/img/gallery/15.jpg" alt=""></div>
+          </div>
+      </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
+</div>
+
+
 
   <!-- fq END -->
-
-
-
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="container">
@@ -665,7 +533,6 @@
         &copy; Copyright <strong><span>KV CINE.</span></strong> All Rights Reserved
       </div>
       <div class="credits">
-
         Designed by <a href="#">Anand</a>
       </div>
     </div>
@@ -678,6 +545,52 @@
     <div class="line"></div>
   </div>
 
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+//     var options = {
+//     "key": "rzp_live_KhDN5R92nnE5jr", // Enter the Key ID generated from the Dashboard
+//     "amount": "100",
+//     "name": "Kv Cine",
+//     "description": "A Wild Sheep Chase is the third novel by Japanese author Haruki Murakami",
+//     "image": "http://example.com/your_logo.jpg",
+//     "handler": function (response){
+//       window.location.pathname = "join.html"
+//     },
+//     /**
+//       * You can track the modal lifecycle by * adding the below code in your options
+//       */
+//     "modal": {
+//         "ondismiss": function(){
+//             console.log('Checkout form closed');
+//         }
+//     }
+// };
+var options = {
+    "key": "rzp_live_KhDN5R92nnE5jr", // Enter the Key ID generated from the Dashboard
+    "amount": "100",
+    "name": "KV CINE Dance Academy",
+    "description": "A Wild Sheep Chase is the third novel by Japanese author Haruki Murakami",
+    "image": "http://example.com/your_logo.jpg",
+    "handler": function (response){
+        alert(response.razorpay_payment_id);
+    },
+    /**
+      * You can track the modal lifecycle by * adding the below code in your options
+      */
+    "modal": {
+        "ondismiss": function(){
+            console.log('Checkout form closed');
+        }
+    }
+};
+var rzp1 = new Razorpay(options);
+var button = document.getElementById('rzp-button1');
+button.onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+}
+</script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
@@ -689,7 +602,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

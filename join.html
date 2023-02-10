@@ -17,7 +17,8 @@
           <div class="col-lg-8 col-md-10">
             <div class="forgot">
                 
-                <h2 class="text-center">Kv Cine </h2>
+             <h2 class="text-center">Welcome To KVcine. </h2>
+             <h3 class="text-center" style="color: green; text-transform: uppercase;"> Join Our Whats Group</h3>
             <p class="dancer"> <strong>Note:</strong> We have noticed that you have joined our group, however, we have not received any payment for a membership plan. Please be aware that access to certain features and benefits of the group is only available to those who have purchased a membership plan. just @ 199/-</p>
             <ol class="list-unstyled">
               <li><span class="text-primary text-medium">1. </span>Click on Join Now Button</li>
@@ -40,11 +41,20 @@
                     <a href="tel:8802496720" class="btn btn-primary" type="button"><i class="bi bi-telephone-outbound"></i>  Call for Information</a>
                   </div>
               </div>
+                <h2 class="text-center">We will Redirect you in 10s <strong class="timer"></strong></h2>
+                <a href="/index.html" class="btn btn-success" type="button">Back to Home</a>
             </form>
           </div>
         </div>
       </div>
 
+      <script>
+        var time = document.getElementsByClassName('timer');
+        var timer = setTimeout(function() {
+            window.location='index.html'
+        }, 10000);
+        time.innerHTML = timer;
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
