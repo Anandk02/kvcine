@@ -235,17 +235,8 @@ window.onload = function() {
 
 
 // Video themailnal
-$(".video-play").on('click', function(e) {
-  e.preventDefault(); 
-  var vidWrap = $(this).parent(),
-      iframe = vidWrap.find('.video iframe'),
-      iframeSrc = iframe.attr('src'),
-      iframePlay = iframeSrc += "?autoplay=1";
-  vidWrap.children('.video-thumbnail').fadeOut();
-  vidWrap.children('.video-play').fadeOut();
-  vidWrap.find('.video iframe').attr('src', iframePlay);
-
-
+$(document).ready(function() {
+  $('#lightgallery').lightGallery();
 });
 
 
@@ -253,8 +244,6 @@ $(".video-play").on('click', function(e) {
 // Gallary
 $(document).ready(function()
 {
-
-   
         if($('.bbb_viewed_slider').length)
         {
             var viewedSlider = $('.bbb_viewed_slider');
