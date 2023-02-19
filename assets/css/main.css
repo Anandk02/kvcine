@@ -2014,13 +2014,20 @@ button:focus {
 
 .popup-content {
   position: absolute;
-  top: 60%;
+  width: 80%;
+  height: 80vh;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #eeeff5;
   padding: 20px;
   text-align: center;
   border-radius: 0.1rem;
+}
+.close{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .popup-content img{
@@ -2035,7 +2042,6 @@ button:focus {
 }
 
 
-<<<<<<< HEAD
 /* Coursel */
 .main-img{
   position: relative;
