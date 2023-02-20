@@ -49,7 +49,7 @@
 
   <!-- AUTO POP UP -->
   <!-- HTML for the special offer popup -->
-<div id="popup" style="display: none;">
+<!-- <div id="popup" style="display: none;">
   <div class="popup-content">
     <button class="close" onclick="closePopup()">X</button>
     <div class="container">
@@ -69,7 +69,7 @@
         </div>
     </div>
     </div> 
-  </div>
+  </div> -->
 </div>
 
   <!-- ======= Header ======= -->
@@ -118,7 +118,7 @@
           <h3 style="font-weight:Regular 800; font-size: 36px; font-family: Lobster; color: #fff;">Performer in Just 5 Days </h3>
           <p>Master the<strong>‘Simple techniques to Dance ’<span>that 15000+ people followed to become good
                 dancers,</span></strong>Even if you have never tried a single dance movement before. </p>
-          <a href="#" id="rzp-button1" class="btn-get-started" style="color: #fff; background-color: #FFE53B;
+          <a href="details.html"  class="btn-get-started" style="color: #fff; background-color: #FFE53B;
           background-image: -webkit-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
           background-image: -moz-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
           background-image: -o-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
@@ -266,7 +266,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   </div>
   </main><!-- End #main -->
   <div class="col-md-12 text-center">
-    <a href="#" id="rzp-button1" class="btn btn-secondary" style="background-color: #FFE53B;
+    <a href="details.html"  class="btn btn-secondary" style="background-color: #FFE53B;
     background-image: -webkit-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
     background-image: -moz-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
     background-image: -o-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
@@ -417,7 +417,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     </div>
     <br>
     <div class="d-grid gap-2 col-6 mx-auto">
-      <a href="#" id="rzp-button1" class="btn btn-secondary" style="background-color: #FFE53B;
+      <a href="details.html"  class="btn btn-secondary" style="background-color: #FFE53B;
       background-image: -webkit-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
       background-image: -moz-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
       background-image: -o-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
@@ -541,7 +541,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 </div>
     <br>
     <div class="d-grid gap-2 col-6 mx-auto">
-      <a href="#" id="rzp-button1" class="btn btn-secondary" style="background-color: #FFE53B;
+      <a href="details.html"  class="btn btn-secondary" style="background-color: #FFE53B;
       background-image: -webkit-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
       background-image: -moz-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
       background-image: -o-linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
@@ -578,36 +578,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   </div>
 
 
-  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-  <script>
 
-    var options = {
-    "key": "rzp_live_w0Qrqc5yLvDTgX", // Enter the Key ID generated from the Dashboard
-    "amount": "19900",
-    "name": "Kv Cine",
-    "description": "A Wild Sheep Chase is the third novel by Japanese author Haruki Murakami",
-    "image": "http://example.com/your_logo.jpg",
-      
-
-    "handler": function (response){
-      window.location.pathname = "join.html"
-    },
-    /**
-      * You can track the modal lifecycle by * adding the below code in your options
-      */
-    "modal": {
-        "ondismiss": function(){
-            console.log('Checkout form closed');
-        }
-    }
-};
-var rzp1 = new Razorpay(options);
-var button = document.getElementById('rzp-button1');
-button.onclick = function(e){
-    rzp1.open();
-    e.preventDefault();
-}
-</script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
